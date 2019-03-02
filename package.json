@@ -1,0 +1,23 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "A Dating App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csinlasath/Friend-Finder.git"
+  },
+  "author": "Christopher Sinlasath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csinlasath/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/csinlasath/Friend-Finder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "node": "^10.15.2"
+  }
+}
