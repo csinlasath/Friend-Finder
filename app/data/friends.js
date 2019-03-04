@@ -1,7 +1,7 @@
 var friendsArr = [
     {
-        "name":"Ahmed",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name":"Uncle Phil",
+        "photo":"http://i2.cdn.turner.com/cnn/dam/assets/140102100749-james-avery-uncle-phil-fresh-prince-horizontal-gallery.jpg",
         "scores":[
             5,
             1,
@@ -17,146 +17,146 @@ var friendsArr = [
       },
       {
         "name":"Danny",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"http://assets.nydailynews.com/polopoly_fs/1.1353156.1369348034!/img/httpImage/image.jpg_gen/derivatives/article_750/25309-324-1-jpg.jpg",
         "scores":[
-            5,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+          4,
+          4,
+          5,
+          2,
+          2,
+          2,
+          5,
+          5,
+          4,
+          3
           ]
       },
       {
         "name":"Joey",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"https://vignette.wikia.nocookie.net/fullhouse/images/7/7d/Joey_Hi-res_001.png/revision/latest/scale-to-width-down/350?cb=20160227124931",
         "scores":[
-            5,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+          3,
+          2,
+          5,
+          2,
+          2,
+          2,
+          2,
+          5,
+          4,
+          3
           ]
       },
       {
         "name":"Jessie",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"https://images.hellogiggles.com/uploads/2016/08/19021549/john-stamos-5a.jpg",
         "scores":[
-            5,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+          4,
+          5,
+          4,
+          5,
+          4,
+          2,
+          2,
+          1,
+          1,
+          2
           ]
       },
       {
         "name":"DJ",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"https://media1.popsugar-assets.com/files/thumbor/CnmqXRk452WN5A0ORzvwEuQG_6o/fit-in/550x550/filters:format_auto-!!-:strip_icc-!!-/2016/06/02/826/n/1922283/51b0e5de_edit_img_image_17053399_1464892570/i/Candace-Cameron-Bure-Interview-About-Fuller-House-Season-2.png",
         "scores":[
-            5,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+          3,
+          1,
+          3,
+          1,
+          5,
+          4,
+          1,
+          4,
+          5,
+          1
           ]
       },
       {
         "name":"Stephanie",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"http://radaronline.com/wp-content/uploads/2016/03/Jodie-sweetin-secrets-scandals-08.jpg",
         "scores":[
-            5,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+          5,
+          5,
+          1,
+          3,
+          1,
+          5,
+          4,
+          4,
+          1,
+          5
           ]
       },
       {
         "name":"Michelle",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"https://beautyeditor.ca/.image/t_share/MTMwNjAzNjE5MDUyNDYwNTEw/mary-kate-olsen-cfda-fashion-awards-2007jpg.jpg",
         "scores":[
-            5,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+          1,
+          2,
+          2,
+          2,
+          4,
+          5,
+          5,
+          2,
+          2,
+          2
           ]
       },
       {
         "name":"Rebecca",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"http://fullhousereviewed.files.wordpress.com/2010/10/picture-222.png",
         "scores":[
-            5,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+          1,
+          3,
+          3,
+          5,
+          2,
+          2,
+          1,
+          2,
+          4,
+          1
           ]
       },
       {
         "name":"Kimmy",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"http://media.gettyimages.com/photos/andrea-barber-poses-for-a-portrait-at-the-2017-peoples-choice-awards-picture-id632788032?s=594x594",
         "scores":[
-            5,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
           ]
       },
       {
         "name":"Steve",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"https://www.aceshowbiz.com/images/wennpic/scott-weinger-premiere-fuller-house-02.jpg",
         "scores":[
-            5,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+          5,
+          4,
+          4,
+          5,
+          1,
+          3,
+          1,
+          1,
+          5,
+          3
           ]
       }
 ]

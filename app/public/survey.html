@@ -7,9 +7,7 @@
     <title>Friend Finder - Christopher Sinlasath</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
@@ -55,7 +53,7 @@
             <h2>Question 1</h2>
             <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
             <select id="question-1" class="form-control form-control-lg">
-                <option>-</option>
+                <!-- <option>-</option> -->
                 <option>1 (Strongly Disagree)</option>
                 <option>2</option>
                 <option>3</option>
@@ -67,7 +65,7 @@
             <h2>Question 2</h2>
             <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
             <select id="question-2" class="form-control form-control-lg">
-                <option>-</option>
+                <!-- <option>-</option> -->
                 <option>1 (Strongly Disagree)</option>
                 <option>2</option>
                 <option>3</option>
@@ -79,7 +77,7 @@
             <h2>Question 3</h2>
             <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
             <select id="question-3" class="form-control form-control-lg">
-                <option>-</option>
+                <!-- <option>-</option> -->
                 <option>1 (Strongly Disagree)</option>
                 <option>2</option>
                 <option>3</option>
@@ -91,7 +89,7 @@
             <h2>Question 4</h2>
             <h4>You rarely do something just out of sheer curiosity.</h4>
             <select id="question-4" class="form-control form-control-lg">
-                <option>-</option>
+                <!-- <option>-</option> -->
                 <option>1 (Strongly Disagree)</option>
                 <option>2</option>
                 <option>3</option>
@@ -103,7 +101,7 @@
             <h2>Question 5</h2>
             <h4>People can rarely upset you.</h4>
             <select id="question-5" class="form-control form-control-lg">
-                <option>-</option>
+                <!-- <option>-</option> -->
                 <option>1 (Strongly Disagree)</option>
                 <option>2</option>
                 <option>3</option>
@@ -115,7 +113,7 @@
             <h2>Question 6</h2>
             <h4>It is often difficult for you to relate to other people’s feelings.</h4>
             <select id="question-6" class="form-control form-control-lg">
-                <option>-</option>
+                <!-- <option>-</option> -->
                 <option>1 (Strongly Disagree)</option>
                 <option>2</option>
                 <option>3</option>
@@ -127,7 +125,7 @@
             <h2>Question 7</h2>
             <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
             <select id="question-7" class="form-control form-control-lg">
-                <option>-</option>
+                <!-- <option>-</option> -->
                 <option>1 (Strongly Disagree)</option>
                 <option>2</option>
                 <option>3</option>
@@ -139,7 +137,7 @@
             <h2>Question 8</h2>
             <h4>You rarely get carried away by fantasies and ideas.</h4>
             <select id="question-8" class="form-control form-control-lg">
-                <option>-</option>
+                <!-- <option>-</option> -->
                 <option>1 (Strongly Disagree)</option>
                 <option>2</option>
                 <option>3</option>
@@ -152,7 +150,7 @@
             <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or
                 not.</h4>
             <select id="question-9" class="form-control form-control-lg">
-                <option>-</option>
+                <!-- <option>-</option> -->
                 <option>1 (Strongly Disagree)</option>
                 <option>2</option>
                 <option>3</option>
@@ -164,7 +162,7 @@
             <h2>Question 10</h2>
             <h4>You feel more energetic after spending time with a group of people.</h4>
             <select id="question-10" class="form-control form-control-lg">
-                <option>-</option>
+                <!-- <option>-</option> -->
                 <option>1 (Strongly Disagree)</option>
                 <option>2</option>
                 <option>3</option>
@@ -176,12 +174,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary btn-lg" id="submit-survey-button">Submit Survey</button>
+                    <button type="submit" class="btn btn-primary btn-lg" id="submit-survey-button">Submit
+                        Survey</button>
                 </div>
             </div>
             <hr class="my-4">
         </div>
     </form>
+    <div class="modal fade" id="match-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="match-modal-title">Your Match</h5>
+                </div>
+                <div id="match-modal-body" class="modal-body"></div>
+                <div class="modal-footer">
+                    <a href="/home" class="btn btn-primary">Go Back Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="container">
@@ -193,6 +205,122 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        $("#submit-survey-button").on("click", (event) => {
+            event.preventDefault();
+
+            //Calcuate the Difference Between Two Numbers
+            const calcDifference = (num1, num2) => {
+                if (parseInt(num1) > parseInt(num2)) {
+                    return Math.abs(parseInt(num1) - parseInt(num2));
+                }
+                if (parseInt(num1) < parseInt(num2)) {
+                    return Math.abs(parseInt(num2) - parseInt(num1));
+                }
+                else {
+                    return 0;
+                }
+            }
+
+            if (($("#name-input").val() !== "") && ($("#image-input").val() !== "")) {
+                var checkAnswersArr = [];
+                for (var i = 1; i < 11; i++) {
+                    checkAnswersArr.push($("#question-" + i).val());
+                }
+
+                var questionsWithNoAnswers = [];
+                for (var j = 0; j < checkAnswersArr.length; j++) {
+                    if (checkAnswersArr[j] === "-") {
+                        questionsWithNoAnswers.push((j + 1));
+                    }
+                }
+
+                if (questionsWithNoAnswers.length === 0) {
+                    var newSurvey = {
+                        name: $("#name-input").val().trim(),
+                        photo: $("#image-input").val().trim(),
+                        scores: checkAnswersArr
+                    };
+                    var currFriendDataArr = [];
+                    $.ajax({
+                        url: "/api/friends",
+                        method: "GET"
+                    }).then((friendData) => {
+                        currFriendDataArr = friendData;
+                    });
+                    $.post("/api/friends", newSurvey, (data) => {
+                        // console.log(data);
+                    }).then((data) => {
+                        if (data) {
+                            //Array that holds the value for the differences between Friends and New Survey
+                            var totalDifferenceArr = [];
+                            var sortedArray = [];
+
+                            //Calculates the difference of scores for the current friend
+                            var friendScoreComparison = [];
+                            var differenceInScore = 0;
+                            for (var k = 0; k < currFriendDataArr.length; k++) {
+                                for (var l = 0; l < currFriendDataArr[k].scores.length; l++) {
+                                    friendScoreComparison.push(calcDifference(newSurvey.scores[l], currFriendDataArr[k].scores[l]));
+                                    differenceInScore += friendScoreComparison[l];
+                                }
+                                totalDifferenceArr.push(differenceInScore);
+                                friendScoreComparison = [];
+                                differenceInScore = 0;
+                            }
+                            sortedArray = totalDifferenceArr;
+                            console.log(totalDifferenceArr);
+                            sortedArray.sort(function (a, b) { return a - b });
+                            var smallestNumber = sortedArray[0];
+                            console.log(totalDifferenceArr);
+
+                            var indexOfMatch = 0;
+                            for (var m = 0; m < totalDifferenceArr.length; m++) {
+                                if (totalDifferenceArr[m] === smallestNumber) {
+                                    indexOfMatch = m;
+                                }
+                            }
+
+                            $("#match-modal-body").append("<h4>" + currFriendDataArr[indexOfMatch].name + "</h4>");
+                            $("#match-modal-body").append("<img src='" + currFriendDataArr[indexOfMatch].photo + "' alt='" + currFriendDataArr[indexOfMatch].name + " Photo' width='100%'>");
+                            $("#match-modal").modal({ backdrop: "static", keyboard: false });
+                            checkAnswersArr = [];
+                            questionsWithNoAnswers = [];
+                            currFriendDataArr = [];
+                            totalDifferenceArr = [];
+                            sortedArray = [];
+                            friendScoreComparison = [];
+                            differenceInScore = 0;
+                            indexOfMatch = 0;
+                            $("#match-modal").modal("show");
+                        }
+                        else {
+                            console.error("DID NOT POST");
+                        }
+                    });
+                }
+                else {
+                    alert("You did not answer all the questions.");
+                }
+
+            }
+            else {
+                alert("Missing Name Or Image");
+            }
+            $(document).on("hide.bs.modal", "#match-modal", () => {
+                checkAnswersArr = [];
+                questionsWithNoAnswers = [];
+                currFriendDataArr = [];
+                totalDifferenceArr = [];
+                sortedArray = [];
+                friendScoreComparison = [];
+                differenceInScore = 0;
+                $("#match-modal-body").empty();
+                window.location.href = "/home";
+            });
+        });
+    </script>
 </body>
 
 </html>
